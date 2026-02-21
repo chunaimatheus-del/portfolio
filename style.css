@@ -181,9 +181,10 @@ body {
 }
 
 .card-links {
-  margin-top: 12px;
-  display: flex;
+ display: flex;
   gap: 12px;
+  justify-content: center;
+
 }
 
 .link{
@@ -273,4 +274,18 @@ body {
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 13px;
+}
+
+/* Alinhar botões no mesmo nível */
+.card{
+  display: flex;
+  flex-direction: column;
+  min-height: 180px; /* ajuste se quiser mais alto/baixo */
+}
+
+.card-links{
+  margin-top: auto;           /* empurra para o final do card */
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
 }
